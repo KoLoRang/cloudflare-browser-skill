@@ -1,0 +1,59 @@
+{
+  "account_id": "your_cloudflare_account_id",
+  "api_token": "your_api_token_with_browser_rendering_permission",
+  "_comment": "Configuration Instructions: Replace the account_id and api_token above with your actual credentials",
+  "_instructions": {
+    "1": "Log in to Cloudflare Dashboard: https://dash.cloudflare.com/",
+    "2": "Go to My Profile > API Tokens",
+    "3": "Create a Token with Browser Rendering permissions",
+    "4": "Fill in the Account ID and API Token in the fields above",
+    "5": "Save this file as config.json (do not commit to version control)"
+  },
+  "default_settings": {
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "goto_options": {
+      "waitUntil": "networkidle2",
+      "timeout": 30000
+    },
+    "performance_optimization": {
+      "reject_resource_types": ["font", "image"],
+      "max_workers": 3,
+      "delay_between_requests": 1.0
+    }
+  },
+  "screenshot_options": {
+    "full_page": true,
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    }
+  },
+  "pdf_options": {
+    "format": "a4",
+    "print_background": true,
+    "display_header_footer": false,
+    "margin": {
+      "top": "20px",
+      "bottom": "20px",
+      "left": "20px",
+      "right": "20px"
+    }
+  },
+  "content_extraction": {
+    "reject_resource_types": ["image", "stylesheet", "font"],
+    "wait_for_selector": null,
+    "timeout": 30000
+  },
+  "ai_extraction": {
+    "default_prompts": {
+      "products": "Extract all product information including name, price, description, and image URLs",
+      "articles": "Extract article title, author, publish date, and main content",
+      "contact": "Extract contact information including email, phone, address"
+    }
+  }
+}
