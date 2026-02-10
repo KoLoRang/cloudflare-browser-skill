@@ -20,6 +20,11 @@ The JavaScript client supports multiple runtime environments:
 - ✅ **Node.js** - Server-side JavaScript (requires ES Modules)
 - ✅ **Modern Browsers** - Frontend applications (requires CORS proxy)
 
+## Documentation Languages
+
+- [English](README.md) (Current)
+- [中文文档](doc/README.md)
+
 ## Quick Start
 
 ### 1. Configure API Credentials
